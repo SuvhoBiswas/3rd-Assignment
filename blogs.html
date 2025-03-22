@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Blogs - Multiplication Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Math Tools</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html" class="active">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Math Learning Blog</h1>
+        
+        <article class="blog-post">
+            <h2>What is the difference between let const and var in javascript?</h2>
+            <p>In JavaScript, var, let, and const are used for variable declarations, but they have key differences. The var keyword is function-scoped, meaning it is only accessible within the function where it is declared. It can be redeclared and reassigned, but it is hoisted to the top of its scope with an initial value of undefined, which can lead to unexpected behavior. On the other hand, let is block-scoped, meaning it is confined within the curly braces {} where it is declared. It can be reassigned but not redeclared within the same scope, preventing accidental overwrites. Similarly, const is also block-scoped but has the added restriction that its value cannot be reassigned after initialization. Unlike var, both let and const are hoisted but remain in a "temporal dead zone" until they are initialized, making them safer to use. In modern JavaScript development, it is recommended to use const by default for variables that do not change and let when reassignment is necessary, while var is generally avoided due to its scope-related issues.</p>
+        </article>
+
+        <article class="blog-post">
+            <h2>What is the difference between find(),filter() methods?</h2>
+            <p>The find() and filter() methods in JavaScript are both used to search for elements in an array, but they work differently. The find() method returns the first element that matches the given condition, stopping once a match is found, while filter() returns an array containing all elements that satisfy the condition. If no match is found, find() returns undefined, whereas filter() returns an empty array. In short, find() is used when you need a single matching element, whereas filter() is useful when you need multiple matches.</p>
+        </article>
+
+        <article class="blog-post">
+            <h2>How do you select an element in the DOM using JavaScript?</h2>
+            <p>In JavaScript, you can select elements in the DOM using methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll(). The getElementById() method selects a single element by its unique ID, while getElementsByClassName() and getElementsByTagName() return collections of elements matching a class name or tag name, respectively. The querySelector() method selects the first element that matches a CSS selector, whereas querySelectorAll() returns a NodeList of all matching elements. Among these, querySelector() and querySelectorAll() are the most flexible and commonly used for modern JavaScript development</p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide useful mathematical tools to help with learning and calculations.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Math Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
